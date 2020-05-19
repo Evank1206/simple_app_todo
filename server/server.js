@@ -4,6 +4,8 @@ const cors = require("cors");
 require("dotenv").config();
 const PORT = process.env.PORT || 5000;
 
+const db = require("./db")
+
 
 
 app.use(cors());
@@ -23,7 +25,7 @@ app.get("/getAll", (request, response) => {
     response.json({
         success: true
     })
-    
+ 
     
 });
 
